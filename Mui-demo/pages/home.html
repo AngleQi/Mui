@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<!--引入公用样式-->
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/lunbo2.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/lunbo1.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/lunbo3.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/lunbo6.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/lunbo5.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/lunbo4.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		   <div class="mui-content">
+			<!-- cardview卡片视图-->
+			<div class="mui-card" style="margin: 10px;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media">
+					<img src="../images/bgimg1.jpg" width="50" height="50" class="mui-pull-left" style="margin: 10px;"/>
+					<div class="mui-media-body" style="padding: 15px;">
+						小H
+						<p>发表于 2015-06-30 15:30</p>
+					</div>
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<img src="../images/cbd.jpg" width="100%" />
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					<div class="mui-media-body">
+						<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+
+		<div class="mui-card" style="margin: 10px;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media">
+					<img src="../images/bgimg2.jpg" width="50" height="50" class="mui-pull-left" style="margin: 10px;"/>
+					<div class="mui-media-body" style="padding: 15px;">
+						小C
+						<p>发表于 2016-07-30 10:30</p>
+					</div>
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<img src="../images/muwu.jpg" width="100%" />
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					<div class="mui-media-body">
+						<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+            <div class="mui-card" style="margin: 10px;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media">
+					<img src="../images/bgimg4.png" width="50" height="50" class="mui-pull-left" style="margin: 10px;"/>
+					<div class="mui-media-body" style="padding: 15px;">
+						小L
+						<p>发表于 2017-08-30 14:30</p>
+					</div>
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<img src="../images/yuantiao.jpg" width="100%" />
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					<div class="mui-media-body">
+						<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Comment</a>
+					<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+             <div class="mui-card" style="margin: 10px;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media">
+					<img src="../images/logo.png" width="50" class="mui-pull-left" style="margin: 10px;"/>
+					<div class="mui-media-body" style="padding: 15px;">
+						小M
+						<p>发表于 2018-09-30 16:30</p>
+					</div>
+				</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<img src="../images/shuijiao.jpg" width="100%" />
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					<div class="mui-media-body">
+						<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Comment</a>
+					<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+	</body>
+
+</html>
